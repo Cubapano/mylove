@@ -4,4 +4,9 @@
   <!-- unsupported kind of display : PointMap -->
 
 
+  <!-- Tour Information -->
+  <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>
+  <action name="showTourInfo">set(tour_displayinfo, true); events.dispatch(onshowtourinfo);</action>
+
+
 </krpano>

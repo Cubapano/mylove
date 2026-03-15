@@ -27,6 +27,7 @@
 
   <data name="es_prevnexttheme2prevSceneTip"><![CDATA[Anterior]]></data>
   <data name="es_prevnexttheme2nextSceneTip"><![CDATA[Siguiente]]></data>
+  <data name="es_buttontooltip"><![CDATA[]]></data>
 
 
   <data name="es_vr_setup_hmd0"><![CDATA[SELECCIONE SU HMD]]></data>
@@ -63,12 +64,15 @@
 
 
 
+  <data name="es_pano20_description"><![CDATA[<font face="verdana, sans-serif">Haberte encontrado mientras no buscaba nada, fue lo mas lindo que me pudo pasar.</font>]]></data>
 
 
 
+  <data name="es_pano21_description"><![CDATA[<font face="verdana, sans-serif">Tu nunca seras mi demasiado tarde, eres mi hora hora exacta y mi felicidad a tiempo.</font>]]></data>
 
 
 
+  <data name="es_pano22_description"><![CDATA[<font face="verdana, sans-serif">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dalia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</font>]]></data>
 
 
 </krpano>
