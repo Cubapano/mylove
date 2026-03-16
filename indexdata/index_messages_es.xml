@@ -18,16 +18,15 @@
   <data name="es_pano22_title"><![CDATA[2025_04_19_12_07_IMG_5582]]></data>
 
 
-	<data name="es_spotmap35_tooltip"><![CDATA[]]></data>
-	<data name="es_spotmap36_tooltip"><![CDATA[]]></data>
-	<data name="es_spotmap37_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10572_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10573_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10574_tooltip"><![CDATA[]]></data>
 
 
 
 
   <data name="es_prevnexttheme2prevSceneTip"><![CDATA[Anterior]]></data>
   <data name="es_prevnexttheme2nextSceneTip"><![CDATA[Siguiente]]></data>
-  <data name="es_buttontooltip"><![CDATA[]]></data>
 
 
   <data name="es_vr_setup_hmd0"><![CDATA[SELECCIONE SU HMD]]></data>
@@ -64,15 +63,15 @@
 
 
 
-  <data name="es_pano20_description"><![CDATA[<font face="verdana, sans-serif">Haberte encontrado mientras no buscaba nada, fue lo mas lindo que me pudo pasar.</font>]]></data>
+
+  <data name="es_spotpoint10360_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Haberte encontrado mientras no buscaba nada, fue lo mas lindo que me pudo pasar.</span>]]></data>
 
 
 
-  <data name="es_pano21_description"><![CDATA[<font face="verdana, sans-serif">Tu nunca seras mi demasiado tarde, eres mi hora hora exacta y mi felicidad a tiempo.</font>]]></data>
+  <data name="es_spotpoint10382_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Tu nunca seras mi demasiado tarde, eres mi hora hora exacta y mi felicidad a tiempo.</span>]]></data>
 
 
 
-  <data name="es_pano22_description"><![CDATA[<font face="verdana, sans-serif">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dalia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</font>]]></data>
-
+  <data name="es_spotpoint10385_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dolia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</span>]]></data>
 
 </krpano>

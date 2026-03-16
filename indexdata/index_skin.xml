@@ -1,7 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <krpano version="1.19-pr16">
 
+    
+  <!-- Spot Style - Default Point Spot Style -->
+
+
+  <style name="IconDefaultPointSpotStyle"
+         url="%FIRSTXML%/spots/corazon_user_defaultpoint0.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconDefaultPointSpotStyle"
+         onout="onoutIconDefaultPointSpotStyle"
+
+         height="40"
+         width="40"
+         />
+  <action name="onhoverIconDefaultPointSpotStyle">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDefaultPointSpotStyle">
+    hideTooltip();
+
+
+
+  </action>
+
+
+
   <!-- unsupported kind of display : PointMap -->
+
+
+    
+  <!-- Spot Style - Default Point Spot Style 1 -->
+
+
+  <style name="IconDefaultPointSpotStyle1"
+         url="%FIRSTXML%/spots/corazon_user_defaultpoint1.png"
+         visible="false"
+         edge="center"
+         onhover="onhoverIconDefaultPointSpotStyle1"
+         onout="onoutIconDefaultPointSpotStyle1"
+
+         height="40"
+         width="40"
+         />
+  <action name="onhoverIconDefaultPointSpotStyle1">
+    showtooltip('hotspot');
+  </action>
+  <action name="onoutIconDefaultPointSpotStyle1">
+    hideTooltip();
+
+
+
+  </action>
+
 
 
 <!-- ********** -->
@@ -97,11 +149,11 @@
 />
 
 <!-- ********** -->
-<!-- Descripción -->
-<!-- id : description -->
+<!-- Descripción Larga -->
+<!-- id : description1 -->
 <!-- ********** -->
 
-<ptplugin name="description" canStart="false" newPano="false" openatstart="false" mode="panorama" startMethod="showDescription_description" engine="kolorArea">
+<ptplugin name="description1" canStart="false" newPano="false" openatstart="false" mode="spot" startMethod="" engine="kolorArea">
 	<settings>
 		<option name="position" value="center" type="string" />
 		<option name="start_position" value="top" type="string" />
@@ -119,6 +171,163 @@
 		<option name="padding" value="15" type="int" />
 		<option name="display_title" value="false" type="bool" />
 		<option name="close_displayed" value="false" type="bool" />
+		<option name="close_text" value="description1display_close_text" type="string" />
+
+		<option name="overlay_displayed" value="false" type="bool" />
+		<option name="overlay_color" value="000000" type="string" />
+		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
+
+		<option name="area_width" value="55" type="int" />
+		<option name="area_height" value="60" type="int" />
+		<option name="area_width_unit" value="percent" type="string" />
+		<option name="area_height_unit" value="percent" type="string" />
+		<option name="animation" value="true" type="bool" />
+		<option name="animation_duration" value="500" type="int" />
+		<option name="refresh_content" value="true" type="bool" />
+		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_description1')" type="string" />
+		<option name="close_on_click" value="true" type="bool" />
+		<option name="close_onclick_callback" value="invokeKrFunction('closeKolorAreaCallbackClick_description1')" type="string" />
+		<option name="zorder" value="2" type="int" />
+		<option name="use_i18n" value="true" type="bool" />
+	</settings>
+</ptplugin>
+
+<action name="kolorAreaJsReady_description1">
+	set(ptplugin[description1].jsready, true);
+
+</action>
+
+
+<action name="openKolorArea_description1">
+	ifnot(ptplugin[description1].isOpen,
+		set(ptplugin[description1].isOpen, true);
+		
+		js(showKolorArea(description1, get(ptplugin[description1].descID)));
+		events.dispatch(onremovedisplayedobject);
+	);
+</action>
+
+<action name="closeKolorArea_description1">
+	if(ptplugin[description1].isOpen,
+		js(invokePluginFunction(description1, closeKolorArea));
+	);
+</action>
+
+<action name="toggleKolorArea_description1">
+	if(ptplugin[description1].isOpen,
+		closeKolorArea_description1();
+	,
+		openKolorArea_description1();
+	);
+</action>
+
+<action name="closeKolorAreaCallback_description1">
+	set(ptplugin[description1].isOpen, false);
+	if(tour_displayinfo,hideTourInfo();
+
+	);
+</action>
+
+<action name="closeKolorAreaCallbackClick_description1">
+
+
+	if(tour_displayinfo,hideTourInfo();
+
+	);
+</action>
+
+
+<action name="showKolorArea_description1">
+	ifnot(ptplugin[description1].startMethod == "",
+		delayedcall(0,get(ptplugin[description1].startMethod));
+	,
+		set(ptplugin[description1].isOpen, true);
+		
+		js(invokePluginFunction(description1, showKolorArea, %1));
+		events.dispatch(onremovedisplayedobject);
+	);
+</action>
+	
+<action name="hideKolorArea_description1">
+	
+	set(ptplugin[description1].isOpen, false);
+	js(invokePluginFunction(description1, hideKolorArea, %1));
+</action>
+
+<action name="openDescription_description1">
+	openKolorArea_description1();
+</action>
+
+<action name="openSpotDescription_description1">
+	set(ptplugin[description1].descID, %1);
+	openKolorArea_description1();
+</action>
+
+<action name="closeDescription_description1">
+	set(ptplugin[description1].currentGroup, false);
+	if(%1,
+		set(restore_description1, true);
+	,
+		set(restore_description1, false);
+	);
+	closeKolorArea_description1();
+</action> 
+
+<action name="showDescription_description1">
+	if(ptplugin[description1].canStart,
+		if(ptplugin[description1].descID != "",
+			openDescription_description1();
+		,
+			hideKolorArea_description1(false);
+		);
+		set(ptplugin[description1].startMethod, "");
+	);
+</action>
+
+
+
+<action name="changeLanguage_description1">
+	if(ptplugin[description1].jsready,
+		stopdelayedcall(delay_description1);
+		js(invokePluginFunction(description1, changeLanguage, true));
+	,
+		delayedcall(delay_description1, 0.1, changeLanguage_description1(););
+	);
+</action>
+
+<events name="kolorAreaEvents_description1" 
+	keep="true"
+	onTourStart="set(ptplugin[description1].canStart, true);if(ptplugin[description1].openatstart,showTourInfo();
+);"
+	onhidetourinfo="if(ptplugin[description1].isOpen,closeDescription_description1(false););"
+	onremovepano="if(ptplugin[description1].isOpen,hideTourInfo();
+);"
+	changetourlanguage="changeLanguage_description1();"
+/>
+
+<!-- ********** -->
+<!-- Descripción Corta -->
+<!-- id : description -->
+<!-- ********** -->
+
+<ptplugin name="description" canStart="false" newPano="false" openatstart="false" mode="spot" startMethod="" engine="kolorArea">
+	<settings>
+		<option name="position" value="center" type="string" />
+		<option name="start_position" value="top" type="string" />
+		<option name="margin_x" value="0" type="int" />
+		<option name="margin_y" value="0" type="int" />
+		<option name="background_color" value="f2f2f2" type="string" />
+		<option name="background_alpha" value="0.66666666666666663" type="float" />
+		<option name="topleft_radius" value="15" type="int" />
+		<option name="topright_radius" value="15" type="int" />
+		<option name="bottomleft_radius" value="15" type="int" />
+		<option name="bottomright_radius" value="15" type="int" />
+		<option name="area_border_width" value="0" type="int" />
+		<option name="area_border_color" value="f2f2f2" type="string" />
+		<option name="area_border_alpha" value="1" type="float" />
+		<option name="padding" value="15" type="int" />
+		<option name="display_title" value="false" type="bool" />
+		<option name="close_displayed" value="false" type="bool" />
 		<option name="close_text" value="descriptiondisplay_close_text" type="string" />
 
 		<option name="overlay_displayed" value="false" type="bool" />
@@ -126,7 +335,7 @@
 		<option name="overlay_alpha" value="0.50000762951094835" type="float" />
 
 		<option name="area_width" value="55" type="int" />
-		<option name="area_height" value="50" type="int" />
+		<option name="area_height" value="25" type="int" />
 		<option name="area_width_unit" value="percent" type="string" />
 		<option name="area_height_unit" value="percent" type="string" />
 		<option name="animation" value="true" type="bool" />
@@ -135,7 +344,7 @@
 		<option name="close_callback" value="invokeKrFunction('closeKolorAreaCallback_description')" type="string" />
 		<option name="close_on_click" value="true" type="bool" />
 		<option name="close_onclick_callback" value="invokeKrFunction('closeKolorAreaCallbackClick_description')" type="string" />
-		<option name="zorder" value="2" type="int" />
+		<option name="zorder" value="3" type="int" />
 		<option name="use_i18n" value="true" type="bool" />
 	</settings>
 </ptplugin>
@@ -223,10 +432,6 @@
 
 <action name="showDescription_description">
 	if(ptplugin[description].canStart,
-		set(ptplugin[description].descID, get(scene[get(xml.scene)].descriptionid));
-		if(ptplugin[description].descID == null,
-			set(ptplugin[description].descID, "");
-		);
 		if(ptplugin[description].descID != "",
 			openDescription_description();
 		,
@@ -237,44 +442,6 @@
 </action>
 
 
-<action name="refreshPanoDescription_description">
-	set(ptplugin[description].descID, get(scene[get(xml.scene)].descriptionid));
-	if(ptplugin[description].descID == null,
-		set(ptplugin[description].descID, "");
-	);
-	if(ptplugin[description].descID != "",
-		if(ptplugin[description].isOpen,
-			js(invokePluginFunction(description, updateKolorArea, get(ptplugin[description].descID)));
-		,
-			if(restore_description,
-				showDescription_description();
-			);
-		);
-	,
-		if(tour_displayinfo,
-			delayedcall(0.1,showTourInfo();
-);
-		);
-		closeDescription_description(get(ptplugin[description].isOpen));
-	);
-</action>
-
-<action name="onNewPano_description">
-	if(ptplugin[description].newPano,
-		if(ptplugin[description].startMethod == "",
-			if(ptplugin[description].isOpen,
-				refreshPanoDescription_description();
-			,
-				if(tour_displayinfo,
-				showDescription_description();
-				,
-				refreshPanoDescription_description();
-				);
-			);
-		);
-	);
-	set(ptplugin[description].newPano, true);
-</action>
 
 <action name="changeLanguage_description">
 	if(ptplugin[description].jsready,
@@ -289,48 +456,11 @@
 	keep="true"
 	onTourStart="set(ptplugin[description].canStart, true);if(ptplugin[description].openatstart,showTourInfo();
 );"
-	onshowtourinfo="if(tour_displayinfo,showDescription_description(););"
 	onhidetourinfo="if(ptplugin[description].isOpen,closeDescription_description(false););"
-	onnewpano="onNewPano_description();"
+	onremovepano="if(ptplugin[description].isOpen,hideTourInfo();
+);"
 	changetourlanguage="changeLanguage_description();"
 />
-
-<!-- ********** -->
-<!-- Button -->
-<!-- id : button -->
-<!-- ********** -->
-
-  <layer name="button"
-         keep="true"
-         url="%FIRSTXML%/graphics/button/corazon.png"
-         align="bottom"
-         x="0"
-         y="10"
-         zorder="3"
-         visible="false"
-         onclick="buttonOnClick"
-         height="40"
-         width="40"
-         />
-
-
-
-  <action name="buttonOnClick">
-showTourInfo();
-
-
-
-
-  </action>
-
-  <events name="buttonevents"
-    onTourStart="showbutton();"
-    hidetourcontrols="hidebutton();"
-    showtourcontrols="showbutton();"
-    keep="true" />
-  <action name="hidebutton">set(layer[button].visible, false);</action>
-  <action name="showbutton">if(tour_displaycontrols,set(layer[button].visible, true);,hidebutton(););</action>
-
 
   <!-- Tour Information -->
   <action name="hideTourInfo">set(tour_displayinfo, false);events.dispatch(onhidetourinfo);</action>

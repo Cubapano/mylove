@@ -260,6 +260,7 @@ function eventKrpanoLoaded (isWebVr) {
 	}else{
 	
 	addKolorArea('description');
+addKolorArea('description1');
 
 	}
 }
@@ -272,7 +273,8 @@ function eventKrpanoLoaded (isWebVr) {
 function eventUnloadPlugins () {
 	resetValuesForPlugins();
 
-	deleteKolorArea('description');
+	deleteKolorArea('description1');
+deleteKolorArea('description');
 
 }
 
