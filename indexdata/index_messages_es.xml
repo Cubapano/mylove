@@ -15,12 +15,12 @@
   <data name="es_pano21_title"><![CDATA[2024_03_30_23_01_IMG_0639]]></data>
 
 
-  <data name="es_pano22_title"><![CDATA[2025_04_19_12_07_IMG_5582]]></data>
+  <data name="es_pano10575_title"><![CDATA[2025_04_19_12_08_IMG_5584]]></data>
 
 
 	<data name="es_spotmap10572_tooltip"><![CDATA[]]></data>
 	<data name="es_spotmap10573_tooltip"><![CDATA[]]></data>
-	<data name="es_spotmap10574_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10577_tooltip"><![CDATA[]]></data>
 
 
 
@@ -61,6 +61,7 @@
   <data name="es_vr_setup_unavailable"><![CDATA[El modo VR no está disponible en tu dispositivo]]></data>
 
 
+  <data name="es_project_description"><![CDATA[<font face="verdana, sans-serif">Lo mas valioso de la vida no es lo que tenemos, sino a quienes tenemos.</font>]]></data>
 
 
 
@@ -72,6 +73,6 @@
 
 
 
-  <data name="es_spotpoint10385_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dolia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</span>]]></data>
+  <data name="es_spotpoint10578_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dolia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</span>]]></data>
 
 </krpano>
