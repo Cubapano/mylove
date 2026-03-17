@@ -5,22 +5,26 @@
 <!--         Messages         -->
 <!-- ************************ -->
 
-  <data name="es_project_title"><![CDATA[My love]]></data>
+  <data name="es_project_title"><![CDATA[Feliz dia del Amor y Amistad]]></data>
 
 
 
   <data name="es_pano20_title"><![CDATA[2023_08_06_21_41_IMG_8544]]></data>
 
 
-  <data name="es_pano21_title"><![CDATA[2024_03_30_23_01_IMG_0639]]></data>
-
-
   <data name="es_pano10575_title"><![CDATA[2025_04_19_12_08_IMG_5584]]></data>
 
 
-	<data name="es_spotmap10572_tooltip"><![CDATA[]]></data>
-	<data name="es_spotmap10573_tooltip"><![CDATA[]]></data>
-	<data name="es_spotmap10577_tooltip"><![CDATA[]]></data>
+  <data name="es_pano21_title"><![CDATA[2024_03_30_23_01_IMG_0639]]></data>
+
+
+  <data name="es_pano10588_title"><![CDATA[2025_04_19_12_08_IMG_5584]]></data>
+
+
+	<data name="es_spotmap10594_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10595_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10596_tooltip"><![CDATA[]]></data>
+	<data name="es_spotmap10597_tooltip"><![CDATA[]]></data>
 
 
 
@@ -65,14 +69,18 @@
 
 
 
-  <data name="es_spotpoint10360_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Haberte encontrado mientras no buscaba nada, fue lo mas lindo que me pudo pasar.</span>]]></data>
+  <data name="es_spotpoint10360_description"><![CDATA[<p><span style="line-height: 107%; font-family: Verdana, sans-serif;"><font size="2">Haberte encontrado mientras no buscaba nada, fue lo más lindo que me pudo pasar.</font></span><o:p></o:p></p>]]></data>
 
 
 
-  <data name="es_spotpoint10382_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Tu nunca seras mi demasiado tarde, eres mi hora hora exacta y mi felicidad a tiempo.</span>]]></data>
+  <data name="es_spotpoint10578_description"><![CDATA[<p><span style="line-height: 107%; font-family: Verdana, sans-serif;"><font size="2">Y pase lo que pase, t</font></span><span style="font-family: Verdana, sans-serif; font-size: small;">ú</span><span style="line-height: 107%; font-family: Verdana, sans-serif;"><font size="2">&nbsp;siempre serás mi más bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseñó a reír justo cuando más dolía la vida; el arte que estremeció mi alma; mi lugar más seguro en el mundo, y la única persona que se atrevió a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</font></span><o:p></o:p></p>]]></data>
 
 
 
-  <data name="es_spotpoint10578_description"><![CDATA[<span style="font-family: verdana, sans-serif;">Y pase lo que pase tu siempre seras mi mas bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseño a reir justo cuando mas dolia la vida; el arte que extremecio mi alma; mi lugar mas seguro en el mundo y la unica persona que se atrevio a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</span>]]></data>
+  <data name="es_spotpoint10382_description"><![CDATA[<p><span style="font-family: Verdana, sans-serif;"><font size="2">Tú nunca serás mi demasiado tarde, eres mi hora exacta y mi felicidad a tiempo.</font></span><o:p></o:p></p>]]></data>
+
+
+
+  <data name="es_spotpoint10589_description"><![CDATA[<p><span style="line-height: 107%; font-family: Verdana, sans-serif;"><font size="2">Y pase lo que pase, t</font></span><span style="font-family: Verdana, sans-serif; font-size: small;">ú</span><span style="line-height: 107%; font-family: Verdana, sans-serif;"><font size="2">&nbsp;siempre serás mi más bonita casualidad; ese recuerdo que nunca quiero borrar; quien me enseñó a reír justo cuando más dolía la vida; el arte que estremeció mi alma; mi lugar más seguro en el mundo, y la única persona que se atrevió a abrazar mis imperfecciones y mi oscuridad sin miedo a nada.</font></span><o:p></o:p></p>]]></data>
 
 </krpano>
